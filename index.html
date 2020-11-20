@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {box-sizing: border-box;}
+body {
+  font-family: Arial;
+  background-color: silver;
+  margin: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 67%;
+}
+.header {
+  padding: 60px;
+  overflow: hidden;
+  text-align: center;
+  background: #080808;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;
+}
+
+/* slideshow*/ 
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none
+overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.titletext {
+  padding: 60px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.dropdown-content {
+  margin-top: 180px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: silver;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+ <div class="header">
+  <h1>Portfolio</h1>
+  <p>Luiz Marcelo Alves de Castro</p>
+    <img src="Cinder_Fic4.png" style="width:70%">
+  <div class="text">Caption Text</div> </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+<div class="header">
+  <h1>Pagina 2</h1>
+  <p>Luiz Marcelo Alves de Castro</p>
+  <img src="SalemValk7.png" style="width:70%">
+  <div class="text">Caption Text</div> 
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <div class="header">
+  <h1>Pagina 3</h1>
+  <p>Luiz Marcelo Alves de Castro</p>
+  <img src="well_done_demon_cyborg.png" style="width:70%">
+  <div class="text">Caption Text</div> </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="header">
+  <h1>Header</h1>
+  <p>El Cuervo: Arte Conceitual</p>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Medias</button>
+  <div class="dropdown-content">
+    <a href="https://www.instagram.com/cuervodraws/">Instagram</a>
+    <a href="https://twitter.com/CuervoDraws">Twitter</a>
+    <a href="https://www.deviantart.com/elcuervoborracho">Deviantart</a>
+  </div>
+</div>
+<div class="content"> 
+
+ 
+  	<h1 style="text-align:center;">In The Shadows of The Emerald Forest</h1>
+	<p style="text-align:center;">Cinder's introspection.</p>
+	<img src="Cinder_Fic4.png" alt="Cinder In The Emerald Forest" class="center">
+	<p></p>
+  
+	<h1 style="text-align:center;">Well Done, Demon Cyborg</h1>
+	<p style="text-align:center;">Tatsumaki saves Genos, the Demon Cyborg.</p>
+	<p></p>
+
+	<img src="well_done_demon_cyborg.png" alt="Tatsumaki Saves Genos" class="center">
+
+	<h1 style="text-align:center;"> Lucia and Aurora</h1>
+	<p style="text-align:center;">Lucia and Aurora inspect the viability of new Materials.</p>
+	<p></p>
+
+	<img src="luciaSketch2.png" alt="Lucia and Aurora inspect materials" class="center">
+	
+	<h1 style="text-align:center;"> Salem and Valkyrie</h1>
+	<p style="text-align:center;">Salem and Valkyrie face off.</p>
+	<p></p>
+
+	<img src="SalemValk7.png" alt="Salem and Valkyrie imitate the Creation of Adam" class="center">
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
+</html>
